@@ -31,9 +31,23 @@ html {
     left: 10px;
 }
 
+.botones-v2 {
+    display: inline-block;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+
 .boton {
     display: inline-block;
     background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+#orden-submit {
+    display: inline-block;
+    background-color: green;
     width: 100px;
     height: 100px;
 }

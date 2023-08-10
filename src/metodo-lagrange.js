@@ -63,7 +63,7 @@ export const polinomio = ( x, coef ) => {
         potencia;
     suma = coef[0];
     for( let i = 1; i < coef.length; i++ ) {
-        potencia = 1.
+        potencia = 1.;
         for( let j = 0; j < i; j++ ) {
             potencia = potencia * x;
         }
