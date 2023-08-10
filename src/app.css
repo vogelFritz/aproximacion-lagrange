@@ -22,11 +22,18 @@ html {
     background-color: black;
 }
 
+.botones {
+    position: relative;
+    background-color: blueviolet;
+    width: 1000px;
+    height: 200px;
+    top: 70%;
+    left: 10px;
+}
+
 .boton {
-    position: absolute;
+    display: inline-block;
     background-color: brown;
-    bottom: 50px;
-    left: auto;
     width: 100px;
     height: 100px;
 }

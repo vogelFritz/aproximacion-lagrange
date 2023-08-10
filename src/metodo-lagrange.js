@@ -91,7 +91,6 @@ export const lagrange = ( x, y ) => {
         aux = structuredClone( x );
         aux.splice( k, 1 );
         actCoef = generarPolinomioAPartirDeRaices( aux );
-        console.log( aux, actCoef )
         ak = polinomio( x[k], actCoef );
         for( let i = 0; i < x.length; i++ ) {
             actCoef[i] /= ak;
