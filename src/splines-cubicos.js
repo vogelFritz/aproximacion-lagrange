@@ -83,7 +83,7 @@ export const armarTermIndepSplines = ( h, f ) => {
  * @param {Array[Number]} b 
  * @returns {Array[Number]}
  */
-const thomas = ( u, d, l, b ) => {
+export const thomas = ( u, d, l, b ) => {
     let u2 = structuredClone( u ),
         d2 = structuredClone( d ),
         l2 = structuredClone( l ),
@@ -103,8 +103,8 @@ const thomas = ( u, d, l, b ) => {
     }
     b2[n] /= d2[n];
     d2[n] = 1.
-    for( let i = 0; i < n - 1; i++ ) {
-        b2[i] -= u2[i];
+    for( let i = 1; i < n - 1; i++ ) {
+        b2[i] -= u2[i] * b2[i-1];
     }
     return b2;
 }

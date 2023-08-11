@@ -1,6 +1,6 @@
 import { combinacion, generarPolinomioAPartirDeRaices, lagrange, polinomio } from './src/metodo-lagrange';
 import { armarMatrizCoeficientes, armarTerminosIndependientes, gaussJordan, agregarColumna, obtenerColumna, minimosCuadrados } from './src/minimos-cuadrados';
-import { polinomioSpline, splinesCubicos } from './src/splines-cubicos';
+import { polinomioSpline, splinesCubicos, thomas } from './src/splines-cubicos';
 let grafico = document.querySelector( '.grafico' );
 let x, y, coef = [], puntosX = [], puntosY = [];
 let botonLagrange = document.querySelector( '#lagrange' );
@@ -85,3 +85,5 @@ botonSplines.addEventListener( "click", () => {
     coef = splinesCubicos( puntosX, puntosY );
     graficarSplineCubico( coef, puntosX );
 } )
+
+console.log( thomas( [0,1,1,0],[1,4,4,1],[0,1,1,0],[0,0,0,0] ) );
